@@ -11,13 +11,13 @@
 ## 📷 Preview
 
 <p align="center">
-  <img src="../assets/speech_to_text.gif" alt="Speech to Text Preview" width="300"/>
+  <img src="assets/speech_to_text.gif" alt="Speech to Text Preview" width="300"/>
 </p>
 
 *An interactive, premium-grade voice recognizer component featuring a speech-triggered avatar glow effect, live text rendering, and customizable themes.*
 
 ---
-
+    
 ## ✨ Features
 
 - **🎙️ Real-time Speech Recognition**
