@@ -11,6 +11,7 @@ class SimpleSpeechToTextWidget extends StatefulWidget {
   final Color? iconColor;
   final TextStyle? textStyle;
   final bool useScaffold;
+  final Color? backgroundColor;
 
   const SimpleSpeechToTextWidget({
     super.key,
@@ -22,6 +23,7 @@ class SimpleSpeechToTextWidget extends StatefulWidget {
     this.iconColor,
     this.textStyle,
     this.useScaffold = true,
+    this.backgroundColor,
   });
 
   @override
@@ -117,11 +119,15 @@ class _SimpleSpeechToTextWidgetState extends State<SimpleSpeechToTextWidget> {
   Widget build(BuildContext context) {
     if (widget.useScaffold) {
       return Scaffold(
+        backgroundColor: widget.backgroundColor ?? Theme.of(context).scaffoldBackgroundColor,
         body: SafeArea(
           child: _buildContent(context),
         ),
       );
     }
-    return _buildContent(context);
+    return Container(
+      color: widget.backgroundColor,
+      child: _buildContent(context),
+    );
   }
 }

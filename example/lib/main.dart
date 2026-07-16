@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
         colorScheme: ColorScheme.fromSeed(
           seedColor: Colors.deepPurple,
-          brightness: Brightness.dark,
+          brightness: Brightness.light,
         ),
       ),
       home: Scaffold(
@@ -35,7 +35,7 @@ class MyApp extends StatelessWidget {
           textStyle: const TextStyle(
             fontSize: 26.0,
             fontWeight: FontWeight.w500,
-            color: Colors.white70,
+            color: Colors.black87,
             fontStyle: FontStyle.italic,
           ),
           onResult: (words) {

@@ -11,7 +11,7 @@
 ## 📷 Preview
 
 <p align="center">
-  <img src="assets/speech_to_text.gif" alt="Speech to Text Preview" width="300"/>
+  <img src="assets/speech_to_text1.gif" alt="Speech to Text Preview" width="300"/>
 </p>
 
 *An interactive, premium-grade voice recognizer component featuring a speech-triggered avatar glow effect, live text rendering, and customizable themes.*
@@ -147,6 +147,7 @@ void openSpeechModal(BuildContext context) {
 | `iconColor` | `Color?` | `null` | The color of the mic icon inside the button. |
 | `textStyle` | `TextStyle?` | *Theme Default* | The text style applied to the rendered transcribed text. |
 | `useScaffold` | `bool` | `true` | When true, wraps the widget in a `Scaffold` and `SafeArea`. Set to `false` if nesting inside another widget structure. |
+| `backgroundColor` | `Color?` | `null` | The background color of the widget (or the Scaffold body if `useScaffold` is true). Defaults to the theme's Scaffold background color. |
 
 ---
 
